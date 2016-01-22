@@ -24,11 +24,12 @@
 
 
 // sql to create table
-$sql = "CREATE TABLE user (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
+$sql = "CREATE TABLE User (
+mobile_no INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+f_name VARCHAR(30) NOT NULL,
+l_name VARCHAR(30) NOT NULL,
+password VARCHAR(50),
+chk_password VARCHAR(50),
 reg_date TIMESTAMP
 )";
 
