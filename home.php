@@ -1,9 +1,26 @@
 <?php
+Server: buzz.database.windows.net,1433 \r\nSQL 
+Database: Buzz_Stop\r\nUser 
+Name: Julie-Anne\r\n\r\nPHP 
+Data Objects(PDO) 
+Sample Code:\r\n\r\ntry {\r\n   
+$conn = new PDO ( \"sqlsrv:server = tcp:buzz.database.windows.net,1433; 
+		Database = Buzz_Stop\", \"Julie-Anne\", \"{CiciBloom1}\");
+		\r\n	$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+		\r\n}\r\ncatch ( PDOException $e ) {
+		\r\n   print( \"Error connecting to SQL Server.\" );
+		\r\n   die(print_r($e));
+		
+		\r\n}\r\n\rSQL Server Extension Sample Code:
+		\r\n\r\n$connectionInfo = array(\"UID\" => \"Julie-Anne@buzz\", \"pwd\" => \"{CiciBloom1}\", \"Database\" => \"Buzz_Stop\", \"LoginTimeout\" => 30, \"Encrypt\" => 1, \"TrustServerCertificate\" => 0);
+		\r\n$serverName = \"tcp:buzz.database.windows.net,1433\";
+		\r\n$conn = sqlsrv_connect($serverName, $connectionInfo);
 
-$db_hostname = "";
-	$db_username = "";
-	$db_password = "";
-	$db_schema = "";
+
+$db_hostname = "tcp:buzz.database.windows.net,1433";
+	$db_username = "Julie-Anne@buzz";
+	$db_password = "CiciBloom1";
+	$db_schema = "Buzz_Stop";
 
 	session_start();
 	// Get the information that is posted to this page
