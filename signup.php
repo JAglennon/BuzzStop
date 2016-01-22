@@ -3,10 +3,10 @@
 	
 	// Setup connection to DB
 	
-	$db_hostname = "gcdsrv.com";
-	$db_username = "buzzardz";
-	$db_password = "foluva12";
-	$db_schema = "buzzardz_BuzzStop";
+	$db_hostname = "";
+	$db_username = "";
+	$db_password = "";
+	$db_schema = "";
 	
 	$connection = mysql_connect($db_hostname, $db_username, $db_password);
 	
