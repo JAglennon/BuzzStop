@@ -7,12 +7,21 @@
 	
 	
 	Build the database in mysql
-	// Create connection
-$conn = mysqli_connect($db_hostname, $db_username, $db_password, $db_schema);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+	
+	// Establish a link to the database
+	$connection = mysql_connect($db_hostname, $db_username, $db_password);
+	
+	if(!$connection){
+		echo 'Error connecting!';
+		die();
+	}
+	
+	// Else, assume it works
+	
+	// Select a schema to work with!
+	$db = mysql_select_db($db_schema, $connection);
+	
+
 
 // sql to create table
 $sql = "CREATE TABLE  (
@@ -23,10 +32,10 @@ email VARCHAR(50),
 reg_date TIMESTAMP
 )";
 
-if (mysqli_query($conn, $sql)) {
+if (mysqli_query($connection, $sql)) {
     echo "Table MyGuests created successfully";
 } else {
-    echo "Error creating table: " . mysqli_error($conn);
+    echo "Error creating table: " . mysqli_error($connection);
 }
 
 	?>
