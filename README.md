@@ -23,9 +23,6 @@ Phase Two Deliverables:
 •	The ability to message chosen friends with text and location services
 •	The ability to search for and see some activity from friends (depending on their security settings)
 Phase Three Deliverables:
-•	The integration of a binary algorithm that takes the original current position and ETA (i.e. 40 minutes) and then turns off or disallows access to constant GPS updates for the first half of the journey (20 minutes). Then checks current location and get an updated ETA (15 minutes) in 7.5 minutes it checks again and then as the destination is less than 10 minutes away it continually checks until the destination is reached.
-(This is a battery conservation feature)
-Phase Four Deliverables:
 •	The addition of notifications, 
 •	The app will vibrate or alert the user one stop before they need to disembark (to help facilitate rush hour capacity, a user being upstairs on the bus, or any disabilities they may have which would hinder a quick departure). 
 •	And then again when it’s their stop.
