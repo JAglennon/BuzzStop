@@ -1,9 +1,9 @@
 <?php
 //connect to a database
-	$db_hostname = "tcp:buzz.database.windows.net,1433";
-	$db_username = "Julie-Anne@buzz";
-	$db_password = "CiciBloom1";
-	$db_schema = "Buzz_Stop";
+	$db_hostname = "";
+	$db_username = "";
+	$db_password = "";
+	$db_schema = "";
 	
 	
 	Build the database in mysql
@@ -25,7 +25,7 @@
 
 // sql to create table
 $sql = "CREATE TABLE User (
-mobile_no INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+mobile_no INT PRIMARY KEY, 
 f_name VARCHAR(30) NOT NULL,
 l_name VARCHAR(30) NOT NULL,
 password VARCHAR(50),
@@ -40,20 +40,16 @@ if (mysqli_query($connection, $sql)) {
 }
 
 $sql = "CREATE TABLE Location (
-mobile_no INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-f_name VARCHAR(30) NOT NULL,
-l_name VARCHAR(30) NOT NULL,
-password VARCHAR(50),
-chk_password VARCHAR(50),
+mobile_no INT PRIMARY KEY, 
+lat FLOAT NOT NULL,
+lon FLOAT NOT NULL,
 reg_date TIMESTAMP
 )";
 
 $sql = "CREATE TABLE Destination (
-mobile_no INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-f_name VARCHAR(30) NOT NULL,
-l_name VARCHAR(30) NOT NULL,
-password VARCHAR(50),
-chk_password VARCHAR(50),
+mobile_no INT PRIMARY KEY, 
+d_lat FLOAT NOT NULL,
+d_lon FLOAT NOT NULL,
 reg_date TIMESTAMP
 )";
 
