@@ -133,7 +133,8 @@ session_start(); // Starting Session
       }
     </style>
     <IMG STYLE="left: 50% WIDTH:200px; HEIGHT:200px" SRC="BuzzStop.png">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABmdMC5WQkbFtwUZaFr0ZmXLub6uvfE4Q"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="https://maps.googleapis.com/maps/api/distancematrix/json?&key="></script>"
     <script>
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
