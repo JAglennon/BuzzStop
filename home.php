@@ -111,7 +111,7 @@ $conn = new PDO ( \"sqlsrv:server = tcp:buzz.database.windows.net,1433;
 	$newUser = $_POST['f_name'];
 	}
 
-	//TEAM ACCOUNT SERVER NB INFO: buzzardz   password foluva12
+	//TEAM ACCOUNT SERVER NB INFO: 
 
 
 //WEEK 1										WEEK 2
