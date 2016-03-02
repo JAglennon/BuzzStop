@@ -1,6 +1,9 @@
 <?php
 
-
+$db_hostname = "";
+	$db_username = "";
+	$db_password = "";
+	$db_schema = "";
 	session_start();
 	// Get the information that is posted to this page
 	if(isset($_SESSION['mobile_no'])){
