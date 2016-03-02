@@ -18,10 +18,6 @@ $conn = new PDO ( \"sqlsrv:server = tcp:buzz.database.windows.net,1433;
 		\r\n$conn = sqlsrv_connect($serverName, $connectionInfo);
 
 */
-	$db_hostname = "tcp:buzz.database.windows.net,1433";
-	$db_username = "Julie-Anne@buzz";
-	$db_password = "CiciBloom1";
-	$db_schema = "Buzz_Stop";
 
 	session_start();
 	// Get the information that is posted to this page
